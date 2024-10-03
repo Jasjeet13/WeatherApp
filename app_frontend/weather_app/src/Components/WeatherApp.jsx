@@ -8,7 +8,7 @@ const WeatherApp = () => {
 
   const fetchWeather = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/weather/${city}`);
+      const response = await axios.get(`https://weather-app12-cyan.vercel.app/weather/${city}`);
       setWeatherData(response.data);
       setError(''); // Clear any previous errors
     } catch (err) {
